@@ -28,6 +28,9 @@ const Nav = () => {
                         <li className='ml-10 text-sm'>Location</li>
                     </Link>
                 </ul>
+                <div onclick={handleNav} className="md:hidden">
+                    <AiOutlineMenu size={25}/>
+                </div>
             </div>
         </div>
     )
