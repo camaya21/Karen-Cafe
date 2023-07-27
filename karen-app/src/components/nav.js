@@ -10,20 +10,24 @@ const Nav = () => {
     }
 
     return (
-        <div className="">
+        <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
             <p className="text-[#13cee7]">Karen Cafe</p>
-            <Link to="/">
-                <p>Home</p>
-            </Link>
-            <Link to="/menu">
-                <p>Menu</p>
-            </Link>
-            <Link to="/Order">
-                <p>Place an Order</p>
-            </Link>
-            <Link to="/Location">
-                <p>Location</p>
-            </Link>
+            <div>
+                <ul className='hidden md:flex'>
+                    <Link href="/">
+                        <li className='ml-10 text-sm'>Home</li>
+                    </Link>
+                    <Link to="/menu">
+                        <li className='ml-10 text-sm'>Menu</li>
+                    </Link>
+                    <Link to="/Order">
+                        <li className='ml-10 text-sm'>Order</li>
+                    </Link>
+                    <Link to="/Location">
+                        <li className='ml-10 text-sm'>Location</li>
+                    </Link>
+                </ul>
+            </div>
         </div>
     )
 }
